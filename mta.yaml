@@ -1,0 +1,21 @@
+ID: WeatherApp
+_schema-version: '2.0'
+version: 0.0.1
+modules:
+  - name: js
+    type: nodejs
+    path: js
+    provides:
+      - name: js_api
+        properties:
+          service_url: '${default-url}'
+  - name: web
+    type: html5
+    path: web
+    requires:
+      - name: js_api
+        group: destinations 
+        properties:
+          name: backend
+          url:  ~{service_url}
+

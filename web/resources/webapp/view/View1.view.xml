@@ -1,0 +1,17 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="web.controller.View1" displayBlock="true">
+	<App>
+		<pages><Page title="{i18n>title}">
+			<content>
+			    <SearchField width="100%" placeholder="Enter city name" id="search_field" search="search"/>
+			    <Panel id="__panel0">
+			        <content>
+			            <sap.ui.comp.smartfield:SmartLabel xmlns:sap.ui.comp.smartfield="sap.ui.comp.smartfield" width="100%" id="city_label" design="Bold" textAlign="Center"/>
+			            <sap.ui.comp.smartfield:SmartLabel xmlns:sap.ui.comp.smartfield="sap.ui.comp.smartfield" width="100%" id="desc_label" textAlign="Center"/>
+			            <sap.ui.comp.smartfield:SmartLabel xmlns:sap.ui.comp.smartfield="sap.ui.comp.smartfield" width="100%" id="temp_label" textAlign="Center"/>
+			        </content>
+			    </Panel>
+			</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
